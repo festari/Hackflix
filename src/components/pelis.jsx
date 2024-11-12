@@ -13,6 +13,6 @@ const Pelis = () => {
       ))}
     </div>
   );
-};
+}; //lo hizo nacho//
 
 export default Pelis;

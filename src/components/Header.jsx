@@ -29,6 +29,6 @@ function Imagen() {
       </div>
     </>
   );
-}
+} //lo hizo yuliana//
 
 export default Imagen;
