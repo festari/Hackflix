@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Imagen from "./components/header";
 import data from "./data.json";
+import Rating from "./components/stars";
 
 function App() {
   return (
