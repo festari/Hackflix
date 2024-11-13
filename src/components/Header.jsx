@@ -3,7 +3,7 @@ function Imagen() {
     <>
       <div>
         <div className="header ">
-          <nav class=" bg-dark border-bottom border-body" data-bs-theme="dark">
+          <nav className=" bg-dark border-bottom border-body" data-bs-theme="dark">
             <nav className="navbar bg-body-tertiary">
               <div className="container-fluid">
                 <a className="navbar-brand" href="#">
@@ -29,6 +29,6 @@ function Imagen() {
       </div>
     </>
   );
-} //lo hizo yuliana//
+} 
 
 export default Imagen;

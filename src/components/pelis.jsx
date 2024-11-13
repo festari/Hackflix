@@ -1,10 +1,10 @@
 import React from "react";
 import data from "../data.json";
-import "./Pelis.css";
 
 const Pelis = () => {
+  
   return (
-    <div className="grilla">
+    <div className="container  grilla">
       {data.map((movie) => (
         <div key={movie.id} className="tarjeta">
           <img src={movie.poster_path} alt={movie.title} />
@@ -13,6 +13,6 @@ const Pelis = () => {
       ))}
     </div>
   );
-}; //lo hizo nacho//
+};
 
 export default Pelis;
