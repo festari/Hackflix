@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Imagen from "./components/header";
-import Pelis from "./components/pelis";
-import Slider from "./components/slider";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Pelis from "./components/Pelis";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -21,7 +19,6 @@ function App() {
   return (
     <>
       <Imagen />
-      <Slider movies={movies} /> 
       <Pelis movies={movies} />
     </>
   );
