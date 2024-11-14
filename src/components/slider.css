@@ -1,9 +1,30 @@
-#carouselExample {
-  width: 50%;
-  margin: 0 auto;
+.carousel {
+  width: 20%;
+  height: 60%;
+  margin-left: 16%;
 }
 
-.carousel-item img {
-  max-width: 100%;
-  height: auto;
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carouselCss {
+  margin-top: 30px;
+}
+
+.information {
+  margin-top: 10px;
+  margin-left: 00px;
+}
+
+.carousel-text h3 {
+  font-size: 1.5em;
+}
+
+.carousel-text p {
+  font-size: 1.1em;
+  color: #333;
 }

@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <Imagen />
-      <Slider />
+      <Slider movies={movies} /> 
       <Pelis movies={movies} />
     </>
   );
