@@ -14,7 +14,6 @@ const Pelis = ({ movies, rating }) => {
             alt={movie.title}
           />
           <h2>{movie.title}</h2>
-          <p>Rating: {rating} estrellas</p> 
         </div>
       ))}
     </div>
