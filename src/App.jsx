@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Imagen from "./components/header";
 import Pelis from "./components/Pelis";
-import Slider from "./components/slider";
 import Stars from "./components/stars";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -23,7 +22,6 @@ function App() {
   return (
     <>
       <Imagen />
-      <Slider movies={movies} />
       <Stars rating={rating} setRating={setRating} />
       <Pelis movies={movies} />
     </>
