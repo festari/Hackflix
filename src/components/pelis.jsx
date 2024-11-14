@@ -1,14 +1,20 @@
 import React from "react";
-import data from "../data.json";
 
-const Pelis = () => {
-  
+const Pelis = ({ movies, rating }) => {
   return (
-    <div className="container  grilla">
-      {data.map((movie) => (
+    <div className="container grilla">
+      {movies.map((movie) => (
         <div key={movie.id} className="tarjeta">
-          <img src={movie.poster_path} alt={movie.title} />
+          <img
+            src={
+              movie.poster_path
+                ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+                : "https://via.placeholder.com/500x750?text=No+Image"
+            }
+            alt={movie.title}
+          />
           <h2>{movie.title}</h2>
+          <p>Rating: {rating} estrellas</p> 
         </div>
       ))}
     </div>

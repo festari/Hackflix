@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Imagen from "./components/header";
-import data from "./data.json";
 import Pelis from "./components/pelis";
+import Stars from "./components/stars";
 
 function App() {
-  const [movies, setMovies] = useState([]); // Estado para guardar los datos de las películas
+  const [movies, setMovies] = useState([]);
 
   useEffect(() => {
     fetch(
@@ -16,9 +14,6 @@ function App() {
       .then((response) => response.json())
       .then((data) => {
         setMovies(data.results);
-      })
-      .catch((error) => {
-        console.error("Error al obtener las películas:", error);
       });
   }, []);
 
@@ -26,6 +21,7 @@ function App() {
     <>
       <Imagen />
       <Pelis movies={movies} />
+      <Stars />
     </>
   );
 }
