@@ -10,6 +10,7 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [rating, setRating] = useState(0);
   const [page, setPage] = useState(2); // Inicializa la página en 2
+  const [page, setPage] = useState(2);
 
   useEffect(() => {
     fetch(
@@ -31,7 +32,7 @@ function App() {
           setMovies((prevMovies) => [...prevMovies, ...data.results]);
           setPage((prevPage) => prevPage + 1);
         });
-    }, 2620);
+    }, 3000);
   };
 
   return (
@@ -42,10 +43,12 @@ function App() {
         dataLength={movies.length}
         next={fetchData}
         hasMore={true}
+        loader={<h4>Loading...</h4>}
         loader={<h4 style={{ textAlign: "center" }}>Cargando...</h4>}
         endMessage={
           <p style={{ textAlign: "center" }}>
-            <b>Has visto todo</b>
+            <b>Yay! You have seen it all</b>
+            <b>¡Yay! Has visto todo</b>
           </p>
         }
       >
