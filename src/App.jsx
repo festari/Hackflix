@@ -2,10 +2,9 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Imagen from "./components/header";
 import Pelis from "./components/pelis";
-import Stars from "./components/stars";
 
 function App() {
-  const [movies, setMovies] = useState([]);
+  const [movies, setMovies] = useState([]); 
 
   useEffect(() => {
     fetch(
@@ -14,14 +13,14 @@ function App() {
       .then((response) => response.json())
       .then((data) => {
         setMovies(data.results);
-      });
+      })
+
   }, []);
 
   return (
     <>
       <Imagen />
       <Pelis movies={movies} />
-      <Stars />
     </>
   );
 }
