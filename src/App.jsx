@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Imagen from "./components/header";
 import Pelis from "./components/Pelis";
-import Stars from "./components/stars";
+import Stars from "./components/Stars";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
