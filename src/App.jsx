@@ -19,11 +19,13 @@ function App() {
       });
   }, []);
 
+  const filteredMovies = movies.filter((movie) => movie.vote_average >= rating);
+
   return (
     <>
       <Imagen />
       <Stars rating={rating} setRating={setRating} />
-      <Pelis movies={movies} />
+      <Pelis movies={filteredMovies} />
     </>
   );
 }
