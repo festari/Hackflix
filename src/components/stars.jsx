@@ -11,7 +11,7 @@ function Stars({ setRating }) {
         <ReactStars
           count={5}
           onChange={ratingChanged}
-          size={48}
+          size={50}
           activeColor="#f242f5"
           classNames="size-stars"
         />
