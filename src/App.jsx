@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Imagen from "./components/header";
-import Pelis from "./components/Pelis";
-import Stars from "./components/Stars";
+import Pelis from "./components/pelis";
+import Stars from "./components/stars";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
           setMovies((prevMovies) => [...prevMovies, ...data.results]);
           setPage((prevPage) => prevPage + 1);
         });
-    }, 2620);
+    }, 2500);
   };
 
   return (
@@ -42,7 +42,13 @@ function App() {
         dataLength={movies.length}
         next={fetchData}
         hasMore={true}
-        loader={<h4 style={{ textAlign: "center" }}>Cargando...</h4>}
+        loader={
+          <div className="spimmerPlace">
+            <div className="spinner-grow " role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        }
         endMessage={
           <p style={{ textAlign: "center" }}>
             <b>Has visto todo</b>
