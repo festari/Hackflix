@@ -21,15 +21,6 @@ function Imagen() {
               </div>
             </nav>
           </nav>
-          <div className="imagen">
-            <div className="titleBox">
-              <h1 className="Title">Tus peliculas favoritas</h1>
-              <h5>
-                Encuentra tus películas favoritas, estrenos y recomendaciones en
-                un solo lugar. ¡Disfruta del cine fácilmente!
-              </h5>
-            </div>
-          </div>
         </div>
       </div>
     </>
