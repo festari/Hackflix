@@ -25,7 +25,6 @@
   display: flex;
 }
 
-
 .spimmerPlace {
   display: flex;
   justify-content: center;
@@ -35,5 +34,6 @@
 }
 
 body {
-  background-image: url("https://i.pinimg.com/originals/4f/c7/95/4fc79540fa40a155c4ec3a4969d110c4.gif");
+  background-image: url("https://i.pinimg.com/originals/83/ea/58/83ea5842c1f9ff2f3a9761b6c17f3b32.gif");
+  color: white;
 }
