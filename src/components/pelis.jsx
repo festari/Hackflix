@@ -3,7 +3,7 @@ import "./Pelis.css";
 
 const Pelis = ({ movies, rating }) => {
   return (
-    <div className="container grilla">
+    <div className="container grilla background">
       {movies.map((movie) => (
         <div key={movie.id} className="tarjeta">
           <div className="movie-card">

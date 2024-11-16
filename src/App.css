@@ -34,6 +34,7 @@
 }
 
 body {
-  background-image: url("https://i.pinimg.com/originals/83/ea/58/83ea5842c1f9ff2f3a9761b6c17f3b32.gif");
-  color: white;
+  background-image: url("https://media.tenor.com/2ldOQmIoi7kAAAAM/blue.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
 }

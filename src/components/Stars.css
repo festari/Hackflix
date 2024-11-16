@@ -9,3 +9,11 @@ h2 {
   color: white;
   padding-top: 20px;
 }
+
+.fondo{
+  background-color: black;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 40px;
+  border-radius: 20px;
+}
