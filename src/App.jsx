@@ -6,6 +6,7 @@ import Pelis from "./components/pelis";
 import Stars from "./components/stars";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "./components/Carousell";
+import Carousell from "./components/Carousell";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -38,7 +39,7 @@ function App() {
   return (
     <>
       <Imagen />
-      <Carousel />
+      <Carousell />
       <Stars rating={rating} setRating={setRating} />
       <InfiniteScroll
         dataLength={movies.length}
