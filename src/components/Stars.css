@@ -11,9 +11,11 @@ h2 {
 }
 
 .fondo{
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.658);
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 40px;
   border-radius: 20px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.644);
+  
 }

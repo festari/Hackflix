@@ -4,11 +4,12 @@
   flex-wrap: wrap;
   gap: 20px;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .tarjeta {
   position: relative;
-  width: 300px; 
+  width: 300px;
   overflow: hidden;
 }
 
@@ -25,7 +26,6 @@
 
 .movie-card:hover img {
   transform: scale(1.05);
-  
 }
 
 .movie-title {
@@ -46,6 +46,6 @@
 }
 
 .background {
-    background-color: rgba(0, 0, 0, 0.507);
-    border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.507);
+  border-radius: 10px;
 }
