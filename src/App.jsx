@@ -1,17 +1,30 @@
 import { useEffect, useState } from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Imagen from "./components/header";
 import Pelis from "./components/pelis";
 import Stars from "./components/stars";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Carousel from "./components/Carousell";
 import Carousell from "./components/Carousell";
+import Home from "./components/Home";
+import Movies from "./components/Movies";
 
 function App() {
   const [movies, setMovies] = useState([]);
   const [rating, setRating] = useState(0);
   const [page, setPage] = useState(2);
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/usuarios/:id",
+      element: <Movies />,
+    },
+  ]);
 
   useEffect(() => {
     fetch(
@@ -38,6 +51,7 @@ function App() {
 
   return (
     <>
+      <RouterProvider router={router} />
       <Imagen />
       <Carousell />
       <Stars rating={rating} setRating={setRating} />
@@ -47,7 +61,7 @@ function App() {
         hasMore={true}
         loader={
           <div className="spimmerPlace">
-            <div className="spinner-grow " role="status">
+            <div className="spinner-grow" role="status">
               <span className="visually-hidden">Loading...</span>
             </div>
           </div>
