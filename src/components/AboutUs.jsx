@@ -1,9 +1,8 @@
 import React from 'react'
-import Imagen from './header'
 
 function AboutUs() {
   return (
-    <Imagen/>
+    <div>AboutUs</div>
   )
 }
 

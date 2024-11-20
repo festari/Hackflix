@@ -28,10 +28,6 @@ function App() {
       path: "/Movies/:id",
       element: <Movie />,
     },
-    {
-      path: "*",
-      element: <ErrorPage />,
-    },
   ]);
 
   return <RouterProvider router={router} />;
