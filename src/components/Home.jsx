@@ -49,11 +49,6 @@ function Home() {
             </div>
           </div>
         }
-        endMessage={
-          <p style={{ textAlign: "center" }}>
-            <b>Has visto todo</b>
-          </p>
-        }
       >
         <Pelis movies={movies} />
       </InfiniteScroll>

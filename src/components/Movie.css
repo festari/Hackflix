@@ -1,0 +1,58 @@
+.Poster {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.Poster-img {
+  border-radius: 10px;
+}
+
+.Titulo {
+  background-color: rgba(0, 0, 0, 0.799);
+  color: white;
+  padding: 10px;
+  height: 50%;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+}
+
+.informacion {
+  background-color: rgba(0, 0, 0, 0.372);
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  width: 50%;
+  margin-top: -50%;
+  margin-left: 3%;
+}
+
+.movie-release-date {
+  background-color: rgba(0, 0, 0, 0.781);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.movie-summary {
+  background-color: rgba(0, 0, 0, 0.781);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.movie-rating {
+  background-color: rgba(0, 0, 0, 0.781);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.movie-duration {
+  background-color: rgba(0, 0, 0, 0.781);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
