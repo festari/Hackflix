@@ -50,18 +50,18 @@ function Movie() {
         </div>
         <div className="place">
           <div className="informacion">
-            <h5 className="movie-release-date">
+            <p className="movie-release-date">
               Fecha de lanzamiento: {movie.release_date || "N/A"}
-            </h5>
-            <h5 className="movie-summary">
+            </p>
+            <p className="movie-summary">
               Resumen: {movie.overview || "No disponible"}
-            </h5>
-            <h5 className="movie-rating">
+            </p>
+            <p className="movie-rating">
               Calificación: {movie.vote_average || "N/A"}/10
-            </h5>
-            <h5 className="movie-duration">
+            </p>
+            <p className="movie-duration">
               Duración: {movie.runtime || "N/A"} minutos
-            </h5>
+            </p>
           </div>
         </div>
       </div>
