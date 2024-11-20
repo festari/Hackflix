@@ -6,6 +6,9 @@ import Movie from "./components/Movie";
 import Info from "./components/Info";
 import AboutUs from "./components/AboutUs";
 import ErrorPage from "./components/ErrorPage";
+import Movie from "./components/Pages/Movie";
+import Info from "./components/Pages/Info";
+import AboutUs from "./components/Pages/AboutUs";
 
 function App() {
   const router = createBrowserRouter([
