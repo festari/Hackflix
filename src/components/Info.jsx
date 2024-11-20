@@ -1,8 +1,11 @@
 import React from 'react'
+import Imagen from './header'
+
 
 function Info() {
   return (
-    <div>Info</div>
+    <Imagen />
+
   )
 }
 

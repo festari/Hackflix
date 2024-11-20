@@ -1,12 +1,14 @@
 import React from "react";
 import "./Pelis.css";
+import { Link } from "react-router-dom";
 
-const Pelis = ({ movies, rating }) => {
+const Pelis = ({ movies }) => {
   return (
     <div className="container grilla background">
       {movies.map((movie) => (
         <div key={movie.id} className="tarjeta">
           <div className="movie-card">
+            <Link to={`/Movies/${movie.id}`}></Link>
             <img
               src={
                 movie.poster_path

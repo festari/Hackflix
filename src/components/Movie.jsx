@@ -1,7 +1,6 @@
- 
-
-function Movie(params) {
-  return <div></div>;
+function Movie() {
+  return;
+  <div></div>;
 }
 
 export default Movie;
