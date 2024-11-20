@@ -5,7 +5,7 @@ import Carousel from "react-bootstrap/Carousel";
 function Carousell() {
   return (
     <div>
-      <img src="./img/Banner Horizontal Minimalista Joyería.gif" alt="banner" className="Banner"/>
+      <img src="./img/hackflix.gif" alt="banner" className="Banner"/>
     </div>
   );
 }
