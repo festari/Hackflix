@@ -1,81 +1,32 @@
-import { useEffect, useState } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-import InfiniteScroll from "react-infinite-scroll-component";
-import Imagen from "./components/header";
-import Pelis from "./components/pelis";
-import Stars from "./components/stars";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Carousell from "./components/Carousell";
 import Home from "./components/Home";
-import Movies from "./components/Movies";
+import Movie from "./components/Movie";
+import Info from "./components/Info";
+import AboutUs from "./components/AboutUs";
 
 function App() {
-  const [movies, setMovies] = useState([]);
-  const [rating, setRating] = useState(0);
-  const [page, setPage] = useState(2);
-
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Home />,
     },
     {
-      path: "/usuarios/:id",
-      element: <Movies />,
+      path: "/Info",
+      element: <Info />,
+    },
+    {
+      path: "/About-Us",
+      element: <AboutUs />,
+    },
+    {
+      path: "/Movies/:id",
+      element: <Movie />,
     },
   ]);
 
-  useEffect(() => {
-    fetch(
-      "https://api.themoviedb.org/3/discover/movie?api_key=c86d2f312ee79124783dcee4dc3d5cc0&include_adult=false&page=2&sort_by=popularity.desc&vote_count.gte=40"
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        setMovies(data.results);
-      });
-  }, []);
-
-  const fetchData = () => {
-    setTimeout(() => {
-      fetch(
-        `https://api.themoviedb.org/3/discover/movie?api_key=c86d2f312ee79124783dcee4dc3d5cc0&include_adult=false&page=${page}&sort_by=popularity.desc&vote_count.gte=40`
-      )
-        .then((response) => response.json())
-        .then((data) => {
-          setMovies((prevMovies) => [...prevMovies, ...data.results]);
-          setPage((prevPage) => prevPage + 1);
-        });
-    }, 2500);
-  };
-
-  return (
-    <>
-      <RouterProvider router={router} />
-      <Imagen />
-      <Carousell />
-      <Stars rating={rating} setRating={setRating} />
-      <InfiniteScroll
-        dataLength={movies.length}
-        next={fetchData}
-        hasMore={true}
-        loader={
-          <div className="spimmerPlace">
-            <div className="spinner-grow" role="status">
-              <span className="visually-hidden">Loading...</span>
-            </div>
-          </div>
-        }
-        endMessage={
-          <p style={{ textAlign: "center" }}>
-            <b>Has visto todo</b>
-          </p>
-        }
-      >
-        <Pelis movies={movies} />
-      </InfiniteScroll>
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
