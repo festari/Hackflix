@@ -10,12 +10,11 @@ h2 {
   padding-top: 20px;
 }
 
-.fondo{
+.fondo {
   background-color: rgba(0, 0, 0, 0.658);
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 40px;
   border-radius: 20px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.644);
-  
 }
