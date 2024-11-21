@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import NavigationBar from "./NavigationBar";
 import "./MovieDetails.css";
 
+
 function MovieDetails() {
   const { id } = useParams();
   const [movie, setMovie] = useState(null);
@@ -62,6 +63,7 @@ function MovieDetails() {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }

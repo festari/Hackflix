@@ -1,5 +1,5 @@
 import React from "react";
-import "./Pelis.css";
+import "./MovieGrid.css";
 import { Link } from "react-router-dom";
 
 const MovieGrid = ({ movies }) => (

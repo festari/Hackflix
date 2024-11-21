@@ -53,6 +53,7 @@ function Home() {
       >
         <MovieGrid movies={movies} />
       </InfiniteScroll>
+      
     </>
   );
 }
