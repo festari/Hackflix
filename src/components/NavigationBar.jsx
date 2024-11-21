@@ -6,6 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link } from "react-router-dom";
+import InputGroup from "react-bootstrap/InputGroup";
 
 function NavigationBar() {
   return (
@@ -20,20 +21,38 @@ function NavigationBar() {
             sticky="top"
           >
             <Container fluid>
-              <Navbar className="bg-body-tertiary">
-                <Container>
-                  <Navbar.Brand href="/">
-                    <img
-                      alt=""
-                      src="https://img.icons8.com/?size=100&id=13479&format=png&color=000000"
-                      width="30"
-                      height="30"
-                      className="d-inline-block align-top"
-                    />
-                    Hackflix
-                  </Navbar.Brand>
-                </Container>
-              </Navbar>
+              <Navbar.Brand href="/">
+                <img
+                  alt=""
+                  src="https://img.icons8.com/isometric/50/film-reel.png"
+                  width="30"
+                  height="30"
+                  className="d-inline-block align-top"
+                />
+                Hackflix
+              </Navbar.Brand>
+
+              <InputGroup style={{ maxWidth: "300px" }}>
+                <Form.Control
+                  aria-label="Busca una película..."
+                  aria-describedby="basic-addon1"
+                  style={{ height: "40px", fontSize: "12px" }}
+                />
+                <Button
+                  variant="outline-secondary"
+                  id="button-addon1"
+                  style={{ padding: "5px 10px" }}
+                >
+                  Buscar
+                </Button>
+              </InputGroup>
+
+              <div className="d-flex align-items-center">
+                <Button variant="info" className="me-2">
+                  Registrate!✍
+                </Button>
+                <Button variant="outline-success">👤Inicia Sesion</Button>
+              </div>
 
               <Navbar.Toggle
                 aria-controls={`offcanvasNavbar-expand-${expand}`}

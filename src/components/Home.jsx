@@ -1,7 +1,6 @@
 import InfiniteScroll from "react-infinite-scroll-component";
 import NavigationBar from "./NavigationBar";
 import MovieGrid from "./MovieGrid";
-import Stars from "./stars";
 import Banner from "./Banner";
 
 import { useEffect, useState } from "react";
@@ -38,7 +37,6 @@ function Home() {
     <>
       <NavigationBar />
       <Banner />
-      <Stars rating={rating} setRating={setRating} />
       <InfiniteScroll
         dataLength={movies.length}
         next={fetchData}
@@ -53,7 +51,6 @@ function Home() {
       >
         <MovieGrid movies={movies} />
       </InfiniteScroll>
-      
     </>
   );
 }
