@@ -1,8 +1,8 @@
 import InfiniteScroll from "react-infinite-scroll-component";
-import Imagen from "./Header";
-import Pelis from "./Pelis";
+import NavigationBar from "./NavigationBar";
+import MovieGrid from "./MovieGrid";
 import Stars from "./stars";
-import Carousell from "./Carousell";
+import Banner from "./Banner";
 
 import { useEffect, useState } from "react";
 
@@ -36,8 +36,8 @@ function Home() {
 
   return (
     <>
-      <Imagen />
-      <Carousell />
+      <NavigationBar />
+      <Banner />
       <Stars rating={rating} setRating={setRating} />
       <InfiniteScroll
         dataLength={movies.length}
@@ -51,7 +51,7 @@ function Home() {
           </div>
         }
       >
-        <Pelis movies={movies} />
+        <MovieGrid movies={movies} />
       </InfiniteScroll>
     </>
   );

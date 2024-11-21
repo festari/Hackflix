@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Imagen from "./header";
-import "./Movie.css";
+import NavigationBar from "./NavigationBar";
+import "./MovieDetails.css";
 
-function Movie() {
+function MovieDetails() {
   const { id } = useParams();
   const [movie, setMovie] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -14,6 +14,7 @@ function Movie() {
         const response = await fetch(
           `https://api.themoviedb.org/3/movie/${id}?api_key=c86d2f312ee79124783dcee4dc3d5cc0`
         );
+
         const data = await response.json();
         setMovie(data);
       } finally {
@@ -28,13 +29,9 @@ function Movie() {
     return <div>Loading....</div>;
   }
 
-  if (!movie) {
-    return <div>No se encontró la película.</div>;
-  }
-
   return (
     <div className="movie-details">
-      <Imagen />
+      <NavigationBar />
       <div className="container">
         <div className="Poster">
           <h1 className="Titulo">{movie.title}</h1>
@@ -69,4 +66,4 @@ function Movie() {
   );
 }
 
-export default Movie;
+export default MovieDetails;

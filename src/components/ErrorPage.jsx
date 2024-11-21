@@ -1,9 +1,9 @@
 import React from "react";
-import Imagen from "./Header";
+import NavigationBar from "./NavigationBar";
 function ErrorPage() {
   return (
     <div>
-      <Imagen />
+      <NavigationBar />
       <h1>Page Not Found</h1>
     </div>
   );

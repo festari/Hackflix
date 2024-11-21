@@ -7,7 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link } from "react-router-dom";
 
-function Imagen() {
+function NavigationBar() {
   return (
     <>
       <div>
@@ -52,13 +52,13 @@ function Imagen() {
                 <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 pe-3">
                     <Nav.Link href="#action1">
-                      <Link to="/">home</Link>
+                      <Link to="/">Home</Link>
                     </Nav.Link>
                     <Nav.Link href="#action2">
                       <Link to="/Info">Info</Link>
                     </Nav.Link>
                     <Nav.Link href="#action3">
-                      <Link to="/About-Us">About us</Link>
+                      <Link to="/About-Us">About Us</Link>
                     </Nav.Link>
                   </Nav>
                   <Form className="d-flex">
@@ -80,4 +80,4 @@ function Imagen() {
   );
 }
 
-export default Imagen;
+export default NavigationBar;

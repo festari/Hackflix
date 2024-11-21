@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./components/Home";
-import Movie from "./components/Movie";
+import Movie from "./components/MovieDetails";
 import ErrorPage from "./components/ErrorPage";
 import Info from "./components/Info";
 import AboutUs from "./components/AboutUs";

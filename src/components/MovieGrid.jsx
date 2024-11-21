@@ -2,7 +2,7 @@ import React from "react";
 import "./Pelis.css";
 import { Link } from "react-router-dom";
 
-const Pelis = ({ movies }) => (
+const MovieGrid = ({ movies }) => (
   <div className="container grilla background">
     {movies.map((movie) => (
       <div key={movie.id} className="tarjeta">
@@ -26,5 +26,4 @@ const Pelis = ({ movies }) => (
   </div>
 );
 
-
-export default Pelis;
+export default MovieGrid;
