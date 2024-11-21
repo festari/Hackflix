@@ -3,12 +3,9 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./components/Home";
 import Movie from "./components/Movie";
+import ErrorPage from "./components/ErrorPage";
 import Info from "./components/Info";
 import AboutUs from "./components/AboutUs";
-import ErrorPage from "./components/ErrorPage";
-import Movie from "./components/Pages/Movie";
-import Info from "./components/Pages/Info";
-import AboutUs from "./components/Pages/AboutUs";
 
 function App() {
   const router = createBrowserRouter([
@@ -17,16 +14,20 @@ function App() {
       element: <Home />,
     },
     {
-      path: "/Info",
-      element: <Info />,
-    },
-    {
       path: "/About-Us",
       element: <AboutUs />,
     },
     {
       path: "/Movies/:id",
       element: <Movie />,
+    },
+    {
+      path: "/Info",
+      element: <Info />,
+    },
+    {
+      path: "/ErrorPage",
+      element: <ErrorPage />,
     },
   ]);
 

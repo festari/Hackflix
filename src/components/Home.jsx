@@ -1,8 +1,9 @@
 import InfiniteScroll from "react-infinite-scroll-component";
-import Imagen from "./header";
+import Imagen from "./Header";
 import Pelis from "./Pelis";
 import Stars from "./stars";
 import Carousell from "./Carousell";
+
 import { useEffect, useState } from "react";
 
 function Home() {

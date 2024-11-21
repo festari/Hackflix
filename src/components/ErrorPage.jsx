@@ -1,5 +1,5 @@
 import React from "react";
-import Imagen from "./header";
+import Imagen from "./Header";
 function ErrorPage() {
   return (
     <div>
