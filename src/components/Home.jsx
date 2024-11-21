@@ -46,7 +46,7 @@ function Home() {
         loader={
           <div className="spimmerPlace">
             <div className="spinner-grow" role="status">
-              <span className="visually-hidden">Loading...</span>
+              <span className="visually-hidden">Loadingg...</span>
             </div>
           </div>
         }
