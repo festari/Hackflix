@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import NavigationBar from "./NavigationBar";
 import "./MovieDetails.css";
 
-
 function MovieDetails() {
   const { id } = useParams();
   const [movie, setMovie] = useState(null);
@@ -30,6 +29,10 @@ function MovieDetails() {
     return <div>Loading....</div>;
   }
 
+  const rating = movie.vote_average
+    ? parseFloat(movie.vote_average.toFixed(1))
+    : "N/A";
+
   return (
     <div className="movie-details">
       <NavigationBar />
@@ -54,16 +57,13 @@ function MovieDetails() {
             <p className="movie-summary">
               Resumen: {movie.overview || "No disponible"}
             </p>
-            <p className="movie-rating">
-              Calificación: {movie.vote_average || "N/A"}/10
-            </p>
+            <p className="movie-rating">Calificación: {rating}/10</p>
             <p className="movie-duration">
               Duración: {movie.runtime || "N/A"} minutos
             </p>
           </div>
         </div>
       </div>
-      
     </div>
   );
 }
