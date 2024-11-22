@@ -71,7 +71,7 @@ function NavigationBar() {
               >
                 <Offcanvas.Header closeButton>
                   <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                    <h1>Information</h1>
+                    <h1 style={{ color: "white" }}>Information</h1>
                   </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
