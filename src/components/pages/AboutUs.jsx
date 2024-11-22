@@ -7,8 +7,8 @@ function AboutUs() {
     <div>
       <NavigationBar />
       <h1>Sobre Nosotros:</h1>
-      <div className="content">
-        <p>
+      <div className="container text ">
+        <p className="P1">
           Bienvenidos a nuestra página web dedicada a las películas descritas.
           Somos un equipo apasionado por el cine y comprometido con hacer que el
           séptimo arte sea accesible para todos. Nuestra misión es proporcionar
@@ -28,7 +28,7 @@ function AboutUs() {
           últimas tendencias y tecnologías en accesibilidad, para ofrecer la
           mejor experiencia posible a nuestros usuarios.
         </p>
-        <p>
+        <p className="P2">
           Nuestro equipo está compuesto por expertos en cine, narradores y
           profesionales de la accesibilidad, todos unidos por la pasión de hacer
           el cine más inclusivo. Colaboramos con organizaciones y comunidades
@@ -39,7 +39,7 @@ function AboutUs() {
           recursos educativos y artículos sobre la importancia de la
           accesibilidad en el cine.
         </p>
-        <p>
+        <p className="P3">
           Queremos crear una comunidad donde todos puedan compartir sus
           experiencias, opiniones y recomendaciones sobre películas. Tu feedback
           es invaluable para nosotros, ya que nos ayuda a mejorar y crecer.
@@ -47,7 +47,7 @@ function AboutUs() {
           disfrutes de las películas tanto como nosotros disfrutamos
           describiéndolas para ti.
         </p>
-        <p>
+        <p className="P4">
           ¡Bienvenido al mundo del cine accesible! Si tienes alguna pregunta o
           sugerencia, no dudes en ponerte en contacto con nosotros. Estamos aquí
           para ayudarte y hacer que tu experiencia sea lo más enriquecedora

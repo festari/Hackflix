@@ -7,6 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link } from "react-router-dom";
 import InputGroup from "react-bootstrap/InputGroup";
+import "./NabegationBar.css";
 
 function NavigationBar() {
   return (
@@ -69,20 +70,30 @@ function NavigationBar() {
               >
                 <Offcanvas.Header closeButton>
                   <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                    <h1 style={{ color: "white" }}>Information</h1>
+                    <h2 style={{ color: "white" }} className="font">
+                      Information
+                    </h2>
                   </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 pe-3">
-                    <Nav.Link href="#action1">
-                      <Link to="/">Home</Link>
-                    </Nav.Link>
-                    <Nav.Link href="#action2">
-                      <Link to="/Info">Info</Link>
-                    </Nav.Link>
-                    <Nav.Link href="#action3">
-                      <Link to="/About-Us">About Us</Link>
-                    </Nav.Link>
+                    <Button variant="light" className="buttonSpace">
+                      <Nav.Link to="/">
+                        <Link to="/">Home</Link>
+                      </Nav.Link>
+                    </Button>
+
+                    <Button variant="light" className="buttonSpace">
+                      <Nav.Link href="/Info">
+                        <Link to="/Info">Info</Link>
+                      </Nav.Link>
+                    </Button>
+
+                    <Button variant="light" className="buttonSpace">
+                      <Link to="/About-Us">
+                        <Nav.Link href="/About-us">About us</Nav.Link>
+                      </Link>
+                    </Button>
                   </Nav>
                   <Form className="d-flex">
                     <Form.Control
