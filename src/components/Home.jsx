@@ -3,7 +3,6 @@ import NavigationBar from "./NavigationBar";
 import MovieGrid from "./MovieGrid";
 import Stars from "./stars";
 import Banner from "./Banner";
-
 import { useEffect, useState } from "react";
 
 function Home() {
@@ -34,13 +33,15 @@ function Home() {
     }, 2500);
   };
 
+  const filteredMovies = movies.filter((movie) => movie.vote_average >= rating);
+
   return (
     <>
       <NavigationBar />
       <Banner />
-      <Stars rating={rating} setRating={setRating} />
+      <Stars setRating={setRating} />
       <InfiniteScroll
-        dataLength={movies.length}
+        dataLength={filteredMovies.length}
         next={fetchData}
         hasMore={true}
         loader={
@@ -51,7 +52,7 @@ function Home() {
           </div>
         }
       >
-        <MovieGrid movies={movies} />
+        <MovieGrid movies={filteredMovies} />
       </InfiniteScroll>
     </>
   );

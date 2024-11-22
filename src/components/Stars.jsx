@@ -5,6 +5,7 @@ function Stars({ setRating }) {
   const ratingChanged = (newRating) => {
     setRating(newRating);
   };
+
   return (
     <>
       <div className="Estrellas">
@@ -18,7 +19,6 @@ function Stars({ setRating }) {
         />
         <h2>&nbsp; &nbsp;& Más.</h2>
       </div>
-      ,
     </>
   );
 }
