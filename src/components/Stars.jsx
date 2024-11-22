@@ -3,12 +3,12 @@ import "./Stars.css";
 
 function Stars({ setRating }) {
   const ratingChanged = (newRating) => {
-    setRating(newRating * 2);
+    setRating((newRating - 1) * 2);
   };
 
   return (
     <div className="Estrellas">
-      <h2>Filtrar por Rating:&nbsp; &nbsp;</h2> 
+      <h2>Filtrar por Rating:&nbsp; &nbsp;</h2>
       <ReactStars
         count={5}
         onChange={ratingChanged}
