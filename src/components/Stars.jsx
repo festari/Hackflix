@@ -8,7 +8,7 @@ function Stars({ setRating }) {
 
   return (
     <div className="Estrellas">
-      <h2>Filtrar por Rating:&nbsp; &nbsp;</h2>
+      <h2>Filtrar por Rating:&nbsp; &nbsp;</h2> 
       <ReactStars
         count={5}
         onChange={ratingChanged}

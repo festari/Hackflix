@@ -46,8 +46,6 @@ function NavigationBar() {
                   Buscar
                 </Button>
               </InputGroup>
-
-              {/* Botones de "Registrate" e "Inicia Sesion" */}
               <div
                 className="d-flex align-items-center ms-auto"
                 style={{ marginRight: "10px" }}
