@@ -6,7 +6,6 @@ import ErrorPage from "./components/ErrorPage";
 import Info from "./components/Info";
 import AboutUs from "./components/AboutUs";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Stars from "./components/stars";
 
 function App() {
   const router = createBrowserRouter([
