@@ -47,11 +47,17 @@ function NavigationBar() {
                 </Button>
               </InputGroup>
 
-              <div className="d-flex align-items-center">
+              {/* Botones de "Registrate" e "Inicia Sesion" */}
+              <div
+                className="d-flex align-items-center ms-auto"
+                style={{ marginRight: "10px" }}
+              >
                 <Button variant="info" className="me-2">
                   Registrate!✍
                 </Button>
-                <Button variant="outline-success">👤Inicia Sesion</Button>
+                <Button variant="outline-success" className="me-2">
+                  👤Inicia Sesion
+                </Button>
               </div>
 
               <Navbar.Toggle
