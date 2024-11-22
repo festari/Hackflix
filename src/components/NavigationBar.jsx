@@ -51,7 +51,7 @@ function NavigationBar() {
                 style={{ marginRight: "10px" }}
               >
                 <Button variant="info" className="me-2">
-                  Registrate!✍
+                  🐱‍🏍Registrate!
                 </Button>
                 <Button variant="outline-success" className="me-2">
                   👤Inicia Sesion

@@ -1,8 +1,8 @@
 import InfiniteScroll from "react-infinite-scroll-component";
-import NavigationBar from "./NavigationBar";
-import MovieGrid from "./MovieGrid";
-import Stars from "./Stars";
-import Banner from "./Banner";
+import NavigationBar from "../NavigationBar";
+import MovieGrid from "../MovieGrid";
+import Stars from "../Stars";
+import Banner from "../Banner";
 import { useEffect, useState } from "react";
 
 function Home() {

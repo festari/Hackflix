@@ -1,10 +1,10 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "./components/Home";
+import Home from "./components/pages/Home";
 import Movie from "./components/MovieDetails";
-import ErrorPage from "./components/ErrorPage";
-import Info from "./components/Info";
-import AboutUs from "./components/AboutUs";
+import ErrorPage from "./components/pages/ErrorPage";
+import Info from "./components/pages/Info";
+import AboutUs from "./components/pages/AboutUs";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {

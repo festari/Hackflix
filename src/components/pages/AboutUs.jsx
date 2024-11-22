@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutUs.css";
-import NavigationBar from "./NavigationBar";
+import NavigationBar from "../NavigationBar";
 
 function AboutUs() {
   return (
