@@ -5,6 +5,8 @@ import Movie from "./components/MovieDetails";
 import ErrorPage from "./components/pages/ErrorPage";
 import Info from "./components/pages/Info";
 import AboutUs from "./components/pages/AboutUs";
+import OurSelection from "./components/OurSelection";
+import SelectionMovie from "./components/SelectionMovie";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
@@ -24,6 +26,15 @@ function App() {
     {
       path: "/Info",
       element: <Info />,
+    },
+    {
+      path: "/ourselection",
+      element: <OurSelection />,
+    },
+
+    {
+      path: "/ourselection/:id",
+      element: <SelectionMovie />,
     },
     {
       path: "/ErrorPage",

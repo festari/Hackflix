@@ -33,6 +33,14 @@ function NavigationBar() {
                 Hackflix
               </Navbar.Brand>
 
+              <Button
+                as={Link}
+                to="/our-selection"
+                variant="outline-info"
+                className="ms-2"
+              >
+                Nuestra Seleccion
+              </Button>
               <InputGroup style={{ maxWidth: "300px" }}>
                 <Form.Control
                   aria-label="Busca una película..."
@@ -51,6 +59,7 @@ function NavigationBar() {
                 className="d-flex align-items-center ms-auto"
                 style={{ marginRight: "10px" }}
               >
+                {" "}
                 <Button variant="info" className="me-2">
                   🐱‍🏍Registrate!
                 </Button>
