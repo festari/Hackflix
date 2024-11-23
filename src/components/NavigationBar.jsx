@@ -8,8 +8,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link } from "react-router-dom";
 import InputGroup from "react-bootstrap/InputGroup";
 import "./NabegationBar.css";
-
-function NavigationBar() {
+function NavigationBar({ setSearchQuery }) {
   return (
     <>
       <div>
@@ -35,24 +34,29 @@ function NavigationBar() {
 
               <Button
                 as={Link}
-                to="/our-selection"
+                to="/ourselection"
                 variant="outline-info"
                 className="ms-2"
               >
                 Nuestra Seleccion
               </Button>
+
+              <div
+                className="d-flex align-items-center ms-auto"
+                style={{ marginRight: "10px" }}
+              ></div>
               <InputGroup style={{ maxWidth: "300px" }}>
                 <Form.Control
-                  aria-label="Busca una película..."
-                  aria-describedby="basic-addon1"
-                  style={{ height: "40px", fontSize: "12px" }}
+                  type="search"
+                  placeholder="Busca una película...🔎"
+                  onChange={(e) => setSearchQuery(e.target.value)}
                 />
                 <Button
                   variant="outline-secondary"
                   id="button-addon1"
                   style={{ padding: "5px 10px" }}
                 >
-                  Buscar
+                  🔍Buscar
                 </Button>
               </InputGroup>
               <div
@@ -78,41 +82,52 @@ function NavigationBar() {
                 data-bs-theme="dark"
               >
                 <Offcanvas.Header closeButton>
-                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                    <h2 style={{ color: "white" }} className="font">
-                      Information
+                  <Offcanvas.Title
+                    id={`offcanvasNavbarLabel-expand-${expand}`}
+                    className="w-100 text-center"
+                  >
+                    <h2 style={{ color: "white", margin: 0 }} className="font">
+                      HackFlix™
                     </h2>
                   </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
+                  {" "}
+                  <Form className="d-flex mb-3">
+                    <Form.Control
+                      type="search"
+                      placeholder="Busca una película...🔎"
+                      className="me-2"
+                      aria-label="Search"
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                    />
+                    <Button variant="outline-success">🔍Buscar</Button>
+                  </Form>
                   <Nav className="justify-content-end flex-grow-1 pe-3">
                     <Button variant="light" className="buttonSpace">
-                      <Nav.Link to="/">
-                        <Link to="/">Home</Link>
+                      <Nav.Link to="/home">
+                        <Link to="/home">Inicio</Link>
                       </Nav.Link>
                     </Button>
 
                     <Button variant="light" className="buttonSpace">
                       <Nav.Link href="/Info">
-                        <Link to="/Info">Info</Link>
+                        <Link to="/Info">¿Quienes Somos?</Link>
+                      </Nav.Link>
+                    </Button>
+
+                    <Button variant="light" className="buttonSpace">
+                      <Nav.Link href="/ourselection">
+                        <Link to="/ourselection">Nuestra Seleccion</Link>
                       </Nav.Link>
                     </Button>
 
                     <Button variant="light" className="buttonSpace">
                       <Link to="/About-Us">
-                        <Nav.Link href="/About-us">About us</Nav.Link>
+                        <Nav.Link href="/About-us">Sobre Nosotros</Nav.Link>
                       </Link>
                     </Button>
                   </Nav>
-                  <Form className="d-flex">
-                    <Form.Control
-                      type="search"
-                      placeholder="Search"
-                      className="me-2"
-                      aria-label="Search"
-                    />
-                    <Button variant="outline-success">Search</Button>
-                  </Form>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>
             </Container>

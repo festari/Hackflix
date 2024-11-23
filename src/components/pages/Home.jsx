@@ -9,6 +9,7 @@ function Home() {
   const [movies, setMovies] = useState([]);
   const [rating, setRating] = useState(0);
   const [page, setPage] = useState(3);
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     fetch(
@@ -33,11 +34,15 @@ function Home() {
     }, 2500);
   };
 
-  const filteredMovies = movies.filter((movie) => movie.vote_average >= rating);
+  const filteredMovies = movies.filter(
+    (movie) =>
+      movie.title.toLowerCase().includes(searchQuery.toLowerCase()) &&
+      movie.vote_average >= rating
+  );
 
   return (
     <>
-      <NavigationBar />
+      <NavigationBar setSearchQuery={setSearchQuery} />
       <Banner />
       <Stars setRating={setRating} />
       <InfiniteScroll
