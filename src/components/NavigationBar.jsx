@@ -8,6 +8,8 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link } from "react-router-dom";
 import InputGroup from "react-bootstrap/InputGroup";
 import "./NabegationBar.css";
+
+
 function NavigationBar({ setSearchQuery }) {
   return (
     <>
