@@ -2,10 +2,14 @@
   display: flex;
   justify-content: space-around;
   margin-top: 10px;
+  max-height: 50%;
+  max-width: 80%;
 }
 
 .Poster-img {
   border-radius: 10px;
+  max-height: 50%;
+  max-width: 80%;
 }
 
 .Titulo {

@@ -1,6 +1,6 @@
 import React from "react";
-import "./MovieGrid.css";
 import { Link } from "react-router-dom";
+import "./MovieGrid.css";
 
 const MovieGrid = ({ movies }) => (
   <div className="container grilla background">

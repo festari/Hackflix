@@ -1,15 +1,15 @@
 import InfiniteScroll from "react-infinite-scroll-component";
-import NavigationBar from "./NavigationBar";
-import MovieGrid from "./MovieGrid";
-import Stars from "./stars";
-import Banner from "./Banner";
-
+import NavigationBar from "../NavigationBar";
+import MovieGrid from "../MovieGrid";
+import Stars from "../Stars";
+import Banner from "../Banner";
 import { useEffect, useState } from "react";
 
 function Home() {
   const [movies, setMovies] = useState([]);
   const [rating, setRating] = useState(0);
   const [page, setPage] = useState(3);
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     fetch(
@@ -34,13 +34,19 @@ function Home() {
     }, 2500);
   };
 
+  const filteredMovies = movies.filter(
+    (movie) =>
+      movie.title.toLowerCase().includes(searchQuery.toLowerCase()) &&
+      movie.vote_average >= rating
+  );
+
   return (
     <>
-      <NavigationBar />
+      <NavigationBar setSearchQuery={setSearchQuery} />
       <Banner />
-      <Stars rating={rating} setRating={setRating} />
+      <Stars setRating={setRating} />
       <InfiniteScroll
-        dataLength={movies.length}
+        dataLength={filteredMovies.length}
         next={fetchData}
         hasMore={true}
         loader={
@@ -51,9 +57,8 @@ function Home() {
           </div>
         }
       >
-        <MovieGrid movies={movies} />
+        <MovieGrid movies={filteredMovies} />
       </InfiniteScroll>
-      
     </>
   );
 }

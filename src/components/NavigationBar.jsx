@@ -6,8 +6,9 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link } from "react-router-dom";
-
-function NavigationBar() {
+import InputGroup from "react-bootstrap/InputGroup";
+import "./NabegationBar.css";
+function NavigationBar({ setSearchQuery }) {
   return (
     <>
       <div>
@@ -20,20 +21,56 @@ function NavigationBar() {
             sticky="top"
           >
             <Container fluid>
-              <Navbar className="bg-body-tertiary">
-                <Container>
-                  <Navbar.Brand href="/">
-                    <img
-                      alt=""
-                      src="https://img.icons8.com/?size=100&id=13479&format=png&color=000000"
-                      width="30"
-                      height="30"
-                      className="d-inline-block align-top"
-                    />
-                    Hackflix
-                  </Navbar.Brand>
-                </Container>
-              </Navbar>
+              <Navbar.Brand href="/">
+                <img
+                  alt=""
+                  src="https://img.icons8.com/isometric/50/film-reel.png"
+                  width="30"
+                  height="30"
+                  className="d-inline-block align-top"
+                />
+                Hackflix
+              </Navbar.Brand>
+
+              <Button
+                as={Link}
+                to="/ourselection"
+                variant="outline-info"
+                className="ms-2"
+              >
+                Nuestra Seleccion
+              </Button>
+
+              <div
+                className="d-flex align-items-center ms-auto"
+                style={{ marginRight: "10px" }}
+              ></div>
+              <InputGroup style={{ maxWidth: "300px" }}>
+                <Form.Control
+                  type="search"
+                  placeholder="Busca una película...🔎"
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                />
+                <Button
+                  variant="outline-secondary"
+                  id="button-addon1"
+                  style={{ padding: "5px 10px" }}
+                >
+                  🔍Buscar
+                </Button>
+              </InputGroup>
+              <div
+                className="d-flex align-items-center ms-auto"
+                style={{ marginRight: "10px" }}
+              >
+                {" "}
+                <Button variant="info" className="me-2">
+                  🐱‍🏍Registrate!
+                </Button>
+                <Button variant="outline-success" className="me-2">
+                  👤Inicia Sesion
+                </Button>
+              </div>
 
               <Navbar.Toggle
                 aria-controls={`offcanvasNavbar-expand-${expand}`}
@@ -45,31 +82,52 @@ function NavigationBar() {
                 data-bs-theme="dark"
               >
                 <Offcanvas.Header closeButton>
-                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                    <h1>Information</h1>
+                  <Offcanvas.Title
+                    id={`offcanvasNavbarLabel-expand-${expand}`}
+                    className="w-100 text-center"
+                  >
+                    <h2 style={{ color: "white", margin: 0 }} className="font">
+                      HackFlix™
+                    </h2>
                   </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                  <Nav className="justify-content-end flex-grow-1 pe-3">
-                    <Nav.Link href="#action1">
-                      <Link to="/">Home</Link>
-                    </Nav.Link>
-                    <Nav.Link href="#action2">
-                      <Link to="/Info">Info</Link>
-                    </Nav.Link>
-                    <Nav.Link href="#action3">
-                      <Link to="/About-Us">About Us</Link>
-                    </Nav.Link>
-                  </Nav>
-                  <Form className="d-flex">
+                  {" "}
+                  <Form className="d-flex mb-3">
                     <Form.Control
                       type="search"
-                      placeholder="Search"
+                      placeholder="Busca una película...🔎"
                       className="me-2"
                       aria-label="Search"
+                      onChange={(e) => setSearchQuery(e.target.value)}
                     />
-                    <Button variant="outline-success">Search</Button>
+                    <Button variant="outline-success">🔍Buscar</Button>
                   </Form>
+                  <Nav className="justify-content-end flex-grow-1 pe-3">
+                    <Button variant="light" className="buttonSpace">
+                      <Nav.Link to="/home">
+                        <Link to="/home">Inicio</Link>
+                      </Nav.Link>
+                    </Button>
+
+                    <Button variant="light" className="buttonSpace">
+                      <Nav.Link href="/Info">
+                        <Link to="/Info">¿Quienes Somos?</Link>
+                      </Nav.Link>
+                    </Button>
+
+                    <Button variant="light" className="buttonSpace">
+                      <Nav.Link href="/ourselection">
+                        <Link to="/ourselection">Nuestra Seleccion</Link>
+                      </Nav.Link>
+                    </Button>
+
+                    <Button variant="light" className="buttonSpace">
+                      <Link to="/About-Us">
+                        <Nav.Link href="/About-us">Sobre Nosotros</Nav.Link>
+                      </Link>
+                    </Button>
+                  </Nav>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>
             </Container>
