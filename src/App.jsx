@@ -7,6 +7,7 @@ import Info from "./components/pages/Info";
 import AboutUs from "./components/pages/AboutUs";
 import OurSelection from "./components/OurSelection";
 import SelectionMovie from "./components/SelectionMovie";
+import Login from "./components/pages/Login";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
@@ -43,6 +44,10 @@ function App() {
     {
       path: "/ErrorPage",
       element: <ErrorPage />,
+    },
+    {
+      path: "/Login",
+      element: <Login />,
     },
   ]);
 

@@ -7,8 +7,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link } from "react-router-dom";
 import InputGroup from "react-bootstrap/InputGroup";
+import Login from "./pages/Login";
 import "./NabegationBar.css";
-
 
 function NavigationBar({ setSearchQuery }) {
   return (
@@ -47,30 +47,25 @@ function NavigationBar({ setSearchQuery }) {
                 className="d-flex align-items-center ms-auto"
                 style={{ marginRight: "10px" }}
               ></div>
-              <InputGroup style={{ maxWidth: "300px" }}>
+              <Form className="d-flex mb-3">
                 <Form.Control
                   type="search"
-                  placeholder="Busca una película...🔎"
+                  placeholder="Busca una película..."
+                  className="me-2"
+                  aria-label="Search"
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
-                <Button
-                  variant="outline-secondary"
-                  id="button-addon1"
-                  style={{ padding: "5px 10px" }}
-                >
-                  🔍Buscar
-                </Button>
-              </InputGroup>
+                <Button variant="outline-success">Buscar</Button>
+              </Form>
               <div
                 className="d-flex align-items-center ms-auto"
                 style={{ marginRight: "10px" }}
               >
-                {" "}
                 <Button variant="info" className="me-2">
-                  🐱‍🏍Registrate!
+                  Registrate!
                 </Button>
                 <Button variant="outline-success" className="me-2">
-                  👤Inicia Sesion
+                  <Link to="/Login">Inicia secion</Link>
                 </Button>
               </div>
 
@@ -94,16 +89,15 @@ function NavigationBar({ setSearchQuery }) {
                   </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                  {" "}
                   <Form className="d-flex mb-3">
                     <Form.Control
                       type="search"
-                      placeholder="Busca una película...🔎"
+                      placeholder="Busca una película..."
                       className="me-2"
                       aria-label="Search"
                       onChange={(e) => setSearchQuery(e.target.value)}
                     />
-                    <Button variant="outline-success">🔍Buscar</Button>
+                    <Button variant="outline-success">Buscar</Button>
                   </Form>
                   <Nav className="justify-content-end flex-grow-1 pe-3">
                     <Button variant="light" className="buttonSpace">

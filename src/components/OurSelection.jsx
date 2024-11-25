@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import NavigationBar from "./NavigationBar";
 import "./MovieGrid.css";
 import datosdingles from "./Selection.json";
+import Banner from "./Banner";
 
 const OurSelection = () => {
   const [movies, setMovies] = useState([]);
@@ -14,6 +15,7 @@ const OurSelection = () => {
   return (
     <div>
       <NavigationBar />
+      <Banner />
       <div>
         <h2 className="titleOurSelection">Our selection of movies</h2>
       </div>

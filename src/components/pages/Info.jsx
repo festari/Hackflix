@@ -1,7 +1,6 @@
 import React from "react";
 import "./Info.css";
 import NavigationBar from "../NavigationBar";
-import FooterComponent from "../Footer";
 
 function Info() {
   return (
