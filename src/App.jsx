@@ -8,6 +8,7 @@ import AboutUs from "./components/pages/AboutUs";
 import OurSelection from "./components/OurSelection";
 import SelectionMovie from "./components/SelectionMovie";
 import Login from "./components/pages/Login";
+import Register from "./components/pages/Register";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
@@ -48,6 +49,10 @@ function App() {
     {
       path: "/Login",
       element: <Login />,
+    },
+    {
+      path: "/Register",
+      element: <Register />,
     },
   ]);
 

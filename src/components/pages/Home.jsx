@@ -5,6 +5,7 @@ import Stars from "../Stars";
 import Banner from "../Banner";
 import { useEffect, useState } from "react";
 
+
 function Home() {
   const [movies, setMovies] = useState([]);
   const [rating, setRating] = useState(0);

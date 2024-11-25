@@ -61,8 +61,9 @@ function NavigationBar({ setSearchQuery }) {
                 className="d-flex align-items-center ms-auto"
                 style={{ marginRight: "10px" }}
               >
-                <Button variant="info" className="me-2">
-                  Registrate!
+                <Button variant="outline-success" className="me-2">
+                <Link to="/Register">Registrate!</Link>
+                  
                 </Button>
                 <Button variant="outline-success" className="me-2">
                   <Link to="/Login">Inicia secion</Link>
