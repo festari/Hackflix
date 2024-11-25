@@ -4,7 +4,7 @@ import "./Banner.css";
 function Banner() {
   return (
     <div>
-      <img src="./img/hackflix.gif" alt="banner" className="Banner" />
+      <img src="./img/Banner Horizontal Minimalista Joyería (1).gif" alt="banner" className="Banner" />
     </div>
   );
 }

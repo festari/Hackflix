@@ -38,16 +38,18 @@ function MovieDetails() {
       <NavigationBar />
       <div className="container">
         <div className="Poster">
-          <h1 className="Titulo">{movie.title}</h1>
-          <img
-            className="Poster-img"
-            src={
-              movie.poster_path
-                ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
-                : "https://via.placeholder.com/500x750?text=No+Image"
-            }
-            alt={movie.title}
-          />
+          <h2 className="Titulo">{movie.title}</h2>
+          <div className="poster-img">
+            <img
+              className="poster-img"
+              src={
+                movie.poster_path
+                  ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+                  : "https://via.placeholder.com/500x750?text=No+Image"
+              }
+              alt={movie.title}
+            />
+          </div>
         </div>
         <div className="place">
           <div className="informacion">

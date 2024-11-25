@@ -14,6 +14,9 @@ const OurSelection = () => {
   return (
     <div>
       <NavigationBar />
+      <div>
+        <h2 className="titleOurSelection">Our selection of movies</h2>
+      </div>
       <div className="container grilla background">
         {movies.map((movie) => (
           <div key={movie.id} className="tarjeta">

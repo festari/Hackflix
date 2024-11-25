@@ -1,26 +1,37 @@
 .Poster {
   display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
-  max-height: 50%;
-  max-width: 80%;
+  margin-top: 3%;
 }
 
-.Poster-img {
+.titulo-select {
+  background-color: rgba(0, 0, 0, 0.594);
+  text-align: center;
+  margin-top: 3%;
+  padding: 10px;
   border-radius: 10px;
-  max-height: 50%;
-  max-width: 80%;
+  margin-bottom: 3%;
+}
+
+.poster-img-selc {
+  width: 30%;
+  margin-left: 35%;
+  margin-bottom: 1%;
+}
+
+.poster-img {
+  margin-left: 10px;
+  border-radius: 10px;
 }
 
 .Titulo {
-  background-color: rgba(0, 0, 0, 0.799);
   color: white;
   padding: 10px;
   height: 50%;
-  margin-top: 10px;
   border-radius: 10px;
   width: 50%;
   text-align: center;
+  margin-left: 3%;
+  background-color: rgba(0, 0, 0, 0.515);
 }
 
 .informacion {
@@ -31,8 +42,17 @@
   width: 50%;
   margin-top: -50%;
   margin-left: 3%;
+  margin-right: 10px;
 }
 
+.info-selec {
+  background-color: rgba(0, 0, 0, 0.591);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.movie-summary-selec,
 .movie-release-date,
 .movie-summary,
 .movie-rating,
@@ -45,7 +65,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
 }
-
+.movie-summary-selec:hover,
 .movie-release-date:hover,
 .movie-summary:hover,
 .movie-rating:hover,
@@ -63,7 +83,7 @@
   font-weight: 600;
   margin-bottom: 10px;
 }
-
+.movie-summary-selec,
 .movie-release-date p,
 .movie-summary p,
 .movie-rating p,

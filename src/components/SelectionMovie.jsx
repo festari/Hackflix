@@ -8,6 +8,7 @@ const SelectionMovie = () => {
   const { id } = useParams();
   const [movie, setMovie] = useState(null);
 
+
   useEffect(() => {
     const selectedMovie = datosdingles.find(
       (movie) => movie.id === parseInt(id)
@@ -15,18 +16,20 @@ const SelectionMovie = () => {
     setMovie(selectedMovie);
   }, [id]);
 
+
   if (!movie) {
     return <div>Película no encontrada</div>;
   }
+
 
   return (
     <div className="movie-details">
       <NavigationBar />
       <div className="container">
-        <div className="Poster">
-          <h1 className="Titulo">{movie.name}</h1>
+        <div className="poster-selec">
+          <h2 className="titulo-select">{movie.name}</h2>
           <img
-            className="Poster-img"
+            className="poster-img-selc"
             src={
               movie.poster_path
                 ? movie.poster_path
@@ -36,8 +39,8 @@ const SelectionMovie = () => {
           />
         </div>
         <div className="place">
-          <div className="informacion">
-            <p className="movie-summary">
+          <div className="info-selec">
+            <p className="movie-summary-selec">
               Resumen: {movie.plot || "No disponible"}
             </p>
           </div>
@@ -46,5 +49,6 @@ const SelectionMovie = () => {
     </div>
   );
 };
+
 
 export default SelectionMovie;

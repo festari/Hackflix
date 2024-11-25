@@ -10,31 +10,19 @@ function Info() {
       <div className="info">
         <h2>Nuestro Equipo</h2>
         <div className="card">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThGP6wsVMhwaayalDgT7Cotvyg9_QeN0nzUg&s"
-            alt="Persona 1"
-          />
+          <img src="img/animales300101.jpg" alt="Persona 1" />
           <h3>Ignacio</h3>
         </div>
         <div className="card">
-          <img
-            src="https://static.vecteezy.com/system/resources/thumbnails/044/245/414/small_2x/confident-young-businessman-writing-on-a-clipboard-png.png"
-            alt="Persona 2"
-          />
+          <img src="img/9043c4c90d43d9a5c27214ca5dbdbb5b.jpg" alt="Persona 2" />
           <h3>Nicolas</h3>
         </div>
         <div className="card">
-          <img
-            src="https://i.pinimg.com/736x/35/c2/ae/35c2ae3c92b06ef120c2ba8e26d2db12.jpg"
-            alt="Persona 3"
-          />
+          <img src="img/image-51.webp" alt="Persona 3" />
           <h3>Yuliana</h3>
         </div>
         <div className="card">
-          <img
-            src="https://i.pinimg.com/736x/35/c2/ae/35c2ae3c92b06ef120c2ba8e26d2db12.jpg"
-            alt="Persona 3"
-          />
+          <img src="img/Oryctolagus_cuniculus_Tasmania_2.jpg" alt="Persona 3" />
           <h3>Belen</h3>
         </div>
       </div>
