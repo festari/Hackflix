@@ -40,7 +40,7 @@ function Info() {
         <h3>Ubicación:</h3>
         <p>Calle Falsa 123 - Reloco Av. & Masterloko st. 1997</p>
       </div>
-      <FooterComponent />
+   
     </div>
   );
 }

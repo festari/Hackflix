@@ -4,7 +4,7 @@ import MovieGrid from "../MovieGrid";
 import Stars from "../Stars";
 import Banner from "../Banner";
 import { useEffect, useState } from "react";
-
+import "./Home.css";
 
 function Home() {
   const [movies, setMovies] = useState([]);
