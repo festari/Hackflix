@@ -1,50 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 .container.grilla {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   margin-top: 2%;
   padding-top: 30px;
   padding-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin-bottom: 5%;
+  background-color: rgba(255, 255, 255, 0.539);
+  border-radius: 20px;
 }
-
 
 .titleOurSelection {
-  background-color: rgba(0, 0, 0, 0.609);
-  text-align: center;
-  margin-top: 10px;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 3%;
   font-size: 250%;
   padding: 10px;
-  margin-left: 20%;
-  margin-right: 20%;
-  border-radius: 10px;
+  margin-left: 16%;
+  margin-right: 16%;
+  border-radius: 20px;
+  font-family: Montserrat;
 }
+
 .tarjeta {
   position: relative;
   width: 300px;
   overflow: hidden;
 }
 
-
 .movie-card {
   position: relative;
 }
 
-
 .movie-card img {
   width: 100%;
-
 
   display: block;
   border-radius: 10px;
   transition: transform 0.7s ease;
 }
 
-
 .movie-card:hover img {
   transform: scale(1.05);
 }
-
 
 .movie-title {
   position: absolute;
@@ -59,14 +63,7 @@
   transition: opacity 0.3s ease;
 }
 
-
 .movie-card:hover .movie-title {
   opacity: 3;
-}
-
-
-.background {
-  background-color: rgba(0, 0, 0, 0.507);
-  border-radius: 10px;
 }
 

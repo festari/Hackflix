@@ -1,4 +1,41 @@
-.Banner {
-  width: 100%;
-  height: 700px;
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+
+.titulo-banner-style {
+  padding-top: 8%;
+  font-family: Rubik Mono One;
+  font-size: 800%;
+  color: white;
+  position: relative;
+  margin-left: 10%;
+}
+
+
+.background-banner {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  height: 500px;
+  margin: 0;
+  background: linear-gradient(
+    45deg,
+    #c48cb3,
+    #e5c9d7,
+    #83a6ce,
+    #26415e,
+    #0b1b32
+  );
+  background-size: 300% 300%;
+  animation: gradient 10s ease infinite;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

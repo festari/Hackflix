@@ -36,7 +36,7 @@ function MovieDetails() {
   return (
     <div className="movie-details">
       <NavigationBar />
-      <div className="container">
+      <div className="container back">
         <div className="Poster">
           <h2 className="Titulo">{movie.title}</h2>
           <div className="poster-img">

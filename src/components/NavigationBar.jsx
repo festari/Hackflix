@@ -15,13 +15,7 @@ function NavigationBar({ setSearchQuery }) {
     <>
       <div>
         {[false].map((expand) => (
-          <Navbar
-            key={expand}
-            expand={expand}
-            className="bg-body-tertiary"
-            data-bs-theme="dark"
-            sticky="top"
-          >
+          <Navbar key={expand} expand={expand} className="bg-body-tertiary">
             <Container fluid>
               <Navbar.Brand href="/">
                 <img
@@ -37,8 +31,8 @@ function NavigationBar({ setSearchQuery }) {
               <Button
                 as={Link}
                 to="/ourselection"
-                variant="outline-info"
-                className="ms-2"
+                variant="secondary"
+                className="ms-2 spacebuttom"
               >
                 Nuestra Seleccion
               </Button>
@@ -51,23 +45,28 @@ function NavigationBar({ setSearchQuery }) {
                 <Form.Control
                   type="search"
                   placeholder="Busca una película..."
-                  className="me-2"
+                  className="me-2 searcher"
                   aria-label="Search"
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
-                <Button variant="outline-success">Buscar</Button>
+                <Button variant="secondary" className="buttom-style">
+                  Buscar
+                </Button>
               </Form>
               <div
                 className="d-flex align-items-center ms-auto"
                 style={{ marginRight: "10px" }}
               >
-                <Button variant="outline-success" className="me-2">
-                <Link to="/Register">Registrate!</Link>
-                  
-                </Button>
-                <Button variant="outline-success" className="me-2">
-                  <Link to="/Login">Inicia secion</Link>
-                </Button>
+                <Link to="/Register">
+                  <Button variant="secondary" className="me-2">
+                    Registrate!
+                  </Button>
+                </Link>
+                <Link to="/Login">
+                  <Button variant="secondary" className="me-2">
+                    Inicia sesion
+                  </Button>
+                </Link>
               </div>
 
               <Navbar.Toggle
@@ -77,14 +76,14 @@ function NavigationBar({ setSearchQuery }) {
                 id={`offcanvasNavbar-expand-${expand}`}
                 aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
                 placement="end"
-                data-bs-theme="dark"
+                data-bs-theme="light"
               >
                 <Offcanvas.Header closeButton>
                   <Offcanvas.Title
                     id={`offcanvasNavbarLabel-expand-${expand}`}
                     className="w-100 text-center"
                   >
-                    <h2 style={{ color: "white", margin: 0 }} className="font">
+                    <h2 style={{ color: "black", margin: 0 }} className="font">
                       HackFlix™
                     </h2>
                   </Offcanvas.Title>
@@ -98,32 +97,41 @@ function NavigationBar({ setSearchQuery }) {
                       aria-label="Search"
                       onChange={(e) => setSearchQuery(e.target.value)}
                     />
-                    <Button variant="outline-success">Buscar</Button>
+                    <Button variant="secondary">Buscar</Button>
                   </Form>
                   <Nav className="justify-content-end flex-grow-1 pe-3">
-                    <Button variant="light" className="buttonSpace">
-                      <Nav.Link to="/home">
-                        <Link to="/home">Inicio</Link>
-                      </Nav.Link>
-                    </Button>
 
-                    <Button variant="light" className="buttonSpace">
-                      <Nav.Link href="/Info">
-                        <Link to="/Info">¿Quienes Somos?</Link>
-                      </Nav.Link>
-                    </Button>
-
-                    <Button variant="light" className="buttonSpace">
-                      <Nav.Link href="/ourselection">
-                        <Link to="/ourselection">Nuestra Seleccion</Link>
-                      </Nav.Link>
-                    </Button>
-
-                    <Button variant="light" className="buttonSpace">
-                      <Link to="/About-Us">
-                        <Nav.Link href="/About-us">Sobre Nosotros</Nav.Link>
+                    <Nav.Link to="/home" className="buttom-style-nav">
+                      <Link to="/home">
+                        <Button variant="secondary" className="buttonSpace">
+                          Inicio
+                        </Button>
                       </Link>
-                    </Button>
+                    </Nav.Link>
+
+                    <Nav.Link href="/Info" className="buttom-style-nav">
+                      <Link to="/Info">
+                        <Button variant="secondary" className="buttonSpace">
+                          ¿Quienes Somos?
+                        </Button>
+                      </Link>
+                    </Nav.Link>
+
+                    <Nav.Link href="/ourselection" className="buttom-style-nav">
+                      <Link to="/ourselection">
+                        <Button variant="secondary" className="buttonSpace">
+                          Nuestra Seleccion
+                        </Button>
+                      </Link>
+                    </Nav.Link>
+
+                    <Link to="/About-Us" className="buttom-style-nav">
+                      <Nav.Link href="/About-us">
+                        <Button variant="secondary" className="buttonSpace">
+                          Sobre Nosotros
+                        </Button>
+                      </Nav.Link>
+                    </Link>
                   </Nav>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>

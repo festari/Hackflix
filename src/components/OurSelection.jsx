@@ -17,7 +17,7 @@ const OurSelection = () => {
       <NavigationBar />
       <Banner />
       <div>
-        <h2 className="titleOurSelection">Our selection of movies</h2>
+        <h2 className="titleOurSelection">⟼ Nuestra selección</h2>
       </div>
       <div className="container grilla background">
         {movies.map((movie) => (
