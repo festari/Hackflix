@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import NavigationBar from "./NavigationBar";
+import NavigationBar from "../NavigationBar";
 import "./MovieDetails.css";
 
 function MovieDetails() {

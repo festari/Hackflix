@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import NavigationBar from "./NavigationBar";
+import NavigationBar from "../NavigationBar";
 import "./MovieGrid.css";
 import datosdingles from "./Selection.json";
-import Banner from "./Banner";
+import Banner from "../Banner";
 
 export const quicksort = (movies) => {
   if (movies.length <= 1) return movies;
