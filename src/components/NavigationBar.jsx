@@ -12,12 +12,7 @@ function NavigationBar({ setSearchQuery }) {
   return (
     <>
       <div>
-        <Navbar
-          key={false}
-          expand={false}
-          className="bg-body-tertiary"
-          fixed="top"
-        >
+        <Navbar key={false} expand={false} className="bg-body-tertiary">
           <Container fluid>
             <Navbar.Brand href="/">
               <img
