@@ -5,7 +5,9 @@ function Banner() {
   return (
     <div>
       <div className="background-banner">
-        <p className="titulo-banner-style">Hackflix </p>
+        <p className="titulo-banner-style">
+          Hackflix <div className="shape"></div>
+        </p>
       </div>
     </div>
   );
