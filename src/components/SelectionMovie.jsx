@@ -25,7 +25,7 @@ const SelectionMovie = () => {
   return (
     <div className="movie-details">
       <NavigationBar />
-      <div className="container">
+      <div className="container back-select">
         <div className="poster-selec">
           <h2 className="titulo-select">{movie.name}</h2>
           <img
