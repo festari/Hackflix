@@ -5,11 +5,21 @@ import "./MovieGrid.css";
 import datosdingles from "./Selection.json";
 import Banner from "./Banner";
 
+export const quicksort = (movies) => {
+  if (movies.length <= 1) return movies;
+  const pivot = movies[0].name.toLowerCase();
+  const smaller = movies.filter((movie) => movie.name.toLowerCase() < pivot);
+  const greater = movies.filter((movie) => movie.name.toLowerCase() > pivot);
+  const equal = movies.filter((movie) => movie.name.toLowerCase() === pivot);
+  return [...quicksort(smaller), ...equal, ...quicksort(greater)];
+};
+
 const OurSelection = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    setMovies(datosdingles);
+    const sortedMovies = quicksort(datosdingles);
+    setMovies(sortedMovies);
   }, []);
 
   return (

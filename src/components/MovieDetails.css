@@ -1,16 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-body{
-font-family: Montserrat;
+body {
+  font-family: Montserrat;
 }
 
-.back{
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+.back {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   background-color: white;
   height: 840px;
   padding: 20px;
   margin-top: 1%;
   border-radius: 20px;
+}
+
+.back-select {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border-radius: 3%;
+  background-color: white;
+  padding: 10px;
 }
 
 .Poster {
@@ -19,12 +28,15 @@ font-family: Montserrat;
 }
 
 .titulo-select {
-  background-color: rgba(0, 0, 0, 0.594);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.627);
   text-align: center;
-  margin-top: 3%;
+  margin-top: 1%;
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 3%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .poster-img-selc {
