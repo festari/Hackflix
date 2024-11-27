@@ -8,7 +8,6 @@ const SelectionMovie = () => {
   const { id } = useParams();
   const [movie, setMovie] = useState(null);
 
-
   useEffect(() => {
     const selectedMovie = datosdingles.find(
       (movie) => movie.id === parseInt(id)
@@ -16,11 +15,9 @@ const SelectionMovie = () => {
     setMovie(selectedMovie);
   }, [id]);
 
-
   if (!movie) {
     return <div>Película no encontrada</div>;
   }
-
 
   return (
     <div className="movie-details">
@@ -41,7 +38,7 @@ const SelectionMovie = () => {
         <div className="place">
           <div className="info-selec">
             <p className="movie-summary-selec">
-              Resumen: {movie.plot || "No disponible"}
+              {movie.plot || "No disponible"}
             </p>
           </div>
         </div>
@@ -49,6 +46,5 @@ const SelectionMovie = () => {
     </div>
   );
 };
-
 
 export default SelectionMovie;
