@@ -44,18 +44,13 @@
 .shape {
   margin-left: -7%;
   margin-top: -19%;
-  width: 500px;
+  width: 30%;
   height: 470px;
   background: linear-gradient(45deg, #26415e, #83a6ce, #c48cb3);
   animation: morph 4s infinite;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
-
-
-
-
-
-
 
 @keyframes morph {
   0%,
