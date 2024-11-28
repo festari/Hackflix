@@ -18,7 +18,7 @@ const MovieGrid = ({ movies }) => (
             />
           </Link>
           <div className="movie-title">
-            <h2>{movie.title}</h2>
+            <h3>{movie.title}</h3>
           </div>
         </div>
       </div>
