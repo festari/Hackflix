@@ -14,7 +14,6 @@
     rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
     rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   height: 500px;
-  margin-top: 4.2%;
   background: linear-gradient(
     45deg,
     #c48cb3,
@@ -45,7 +44,51 @@
   margin-left: -7%;
   margin-top: -19%;
   width: 30%;
-  height: 470px;
+  height: 45vh;
+  background: linear-gradient(45deg, #26415e, #83a6ce, #c48cb3);
+  animation: morph 4s infinite;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.shape1 {
+  margin-left: 45%;
+  margin-top: -22%;
+  width: 5%;
+  height: 10vh;
+  background: linear-gradient(45deg, #26415e, #83a6ce, #c48cb3);
+  animation: morph 4s infinite;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.shape2 {
+  margin-left: 30%;
+  margin-top: -6%;
+  width: 11%;
+  height: 20vh;
+  background: linear-gradient(45deg, #26415e, #83a6ce, #c48cb3);
+  animation: morph 4s infinite;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.shape4 {
+  margin-left: 25%;
+  margin-top: -3%;
+  width: 10%;
+  height: 15vh;
+  background: linear-gradient(45deg, #26415e, #83a6ce, #c48cb3);
+  animation: morph 4s infinite;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.shape3 {
+  margin-left: 40%;
+  margin-top: -1%;
+  width: 8%;
+  height: 10vh;
   background: linear-gradient(45deg, #26415e, #83a6ce, #c48cb3);
   animation: morph 4s infinite;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,

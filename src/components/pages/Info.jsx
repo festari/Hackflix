@@ -26,13 +26,6 @@ function Info() {
             <img src="img/image-51.webp" alt="Persona 3" />
             <h3>Yuliana</h3>
           </div>
-          <div className="card">
-            <img
-              src="img/Oryctolagus_cuniculus_Tasmania_2.jpg"
-              alt="Persona 3"
-            />
-            <h3>Belen</h3>
-          </div>
         </div>
         <div className="contact-forms">
           <div className="contacto">
