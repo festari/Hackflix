@@ -44,7 +44,7 @@ const OurSelection = () => {
                 />
               </Link>
               <div className="movie-title">
-                <h2>{movie.name}</h2>
+                <h3>{movie.name}</h3>
               </div>
             </div>
           </div>
