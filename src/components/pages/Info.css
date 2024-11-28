@@ -44,7 +44,7 @@
 .card-position {
   display: flex;
   justify-content: center;
- 
+  gap: 8%;
 }
 
 .card img {

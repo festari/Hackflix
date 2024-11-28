@@ -51,50 +51,6 @@
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
-.shape1 {
-  margin-left: 45%;
-  margin-top: -23%;
-  width: 5%;
-  height: 10vh;
-  background: linear-gradient(45deg, #26415e, #83a6ce, #c48cb3);
-  animation: morph 4s infinite;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-}
-
-.shape2 {
-  margin-left: 30%;
-  margin-top: -6%;
-  width: 11%;
-  height: 20vh;
-  background: linear-gradient(45deg, #26415e, #83a6ce, #c48cb3);
-  animation: morph 4s infinite;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-}
-
-.shape4 {
-  margin-left: 25%;
-  margin-top: -3%;
-  width: 10%;
-  height: 15vh;
-  background: linear-gradient(45deg, #26415e, #83a6ce, #c48cb3);
-  animation: morph 4s infinite;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-}
-
-.shape3 {
-  margin-left: 40%;
-  margin-top: -1%;
-  width: 8%;
-  height: 10vh;
-  background: linear-gradient(45deg, #26415e, #83a6ce, #c48cb3);
-  animation: morph 4s infinite;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-}
-
 @keyframes morph {
   0%,
   100% {
@@ -108,5 +64,148 @@
   }
   75% {
     border-radius: 50% 50% 30% 50%;
+  }
+}
+
+.shape1 {
+  margin-left: 45%;
+  margin-top: -23%;
+  width: 5%;
+  height: 10vh;
+  background: linear-gradient(45deg, #26415e, #83a6ce, #c48cb3);
+  animation: alter 4s infinite;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+@keyframes alter {
+  0%,
+  100% {
+    border-radius: 50%;
+  }
+  20% {
+    border-radius: 40% 60% 60% 40% / 50% 40% 60% 50%;
+  }
+  40% {
+    border-radius: 80% 20% 40% 60% / 60% 50% 30% 70%;
+  }
+  60% {
+    border-radius: 50% 50% 70% 30% / 40% 70% 40% 70%;
+  }
+  80% {
+    border-radius: 70% 30% 30% 70% / 50% 60% 50% 60%;
+  }
+}
+
+.shape2 {
+  margin-left: 30%;
+  margin-top: -6%;
+  width: 11%;
+  height: 20vh;
+  background: linear-gradient(45deg, #26415e, #83a6ce, #c48cb3);
+  animation: Modify 4s infinite;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+@keyframes Modify {
+  0%, 100% {
+    border-radius: 50%;
+  }
+  15% {
+    border-radius: 70% 30% 50% 50% / 60% 40% 60% 40%;
+  }
+  35% {
+    border-radius: 30% 70% 60% 40% / 50% 70% 30% 50%;
+  }
+  65% {
+    border-radius: 80% 20% 40% 60% / 70% 30% 50% 70%;
+  }
+  85% {
+    border-radius: 60% 40% 50% 50% / 40% 60% 70% 30%;
+  }
+}
+
+.shape4 {
+  margin-left: 25%;
+  margin-top: -3%;
+  width: 10%;
+  height: 15vh;
+  background: linear-gradient(45deg, #26415e, #83a6ce, #c48cb3);
+  animation: Adapt 4s infinite;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+@keyframes Adapt {
+  0%, 100% {
+    border-radius: 50%;
+  }
+  10% {
+    border-radius: 45% 55% 60% 40% / 50% 60% 40% 50%;
+  }
+  30% {
+    border-radius: 70% 30% 50% 50% / 40% 70% 30% 60%;
+  }
+  50% {
+    border-radius: 60% 40% 40% 60% / 70% 40% 60% 30%;
+  }
+  90% {
+    border-radius: 50% 50% 70% 30% / 60% 40% 60% 40%;
+  }
+}
+
+.shape3 {
+  margin-left: 40%;
+  margin-top: -1%;
+  width: 8%;
+  height: 10vh;
+  background: linear-gradient(45deg, #26415e, #83a6ce, #c48cb3);
+  animation: Shift 4s infinite;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+@keyframes Shift {
+  0%, 100% {
+    border-radius: 50%;
+  }
+  25% {
+    border-radius: 30% 70% 70% 30% / 40% 50% 60% 50%;
+  }
+  50% {
+    border-radius: 60% 40% 30% 70% / 50% 70% 30% 50%;
+  }
+  75% {
+    border-radius: 40% 60% 50% 50% / 60% 40% 40% 60%;
+  }
+}
+
+.shape5 {
+  margin-left: 53%;
+  margin-top: -15%;
+  width: 4%;
+  height: 5vh;
+  background: linear-gradient(45deg, #26415e, #83a6ce, #c48cb3);
+  animation: change 4s infinite;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+@keyframes change {
+  0%, 100% {
+    border-radius: 50%;
+  }
+  20% {
+    border-radius: 60% 40% 50% 50% / 40% 60% 50% 50%;
+  }
+  40% {
+    border-radius: 30% 70% 70% 30% / 50% 40% 60% 50%;
+  }
+  60% {
+    border-radius: 80% 20% 40% 60% / 30% 70% 30% 70%;
+  }
+  80% {
+    border-radius: 50% 50% 30% 70% / 70% 30% 60% 40%;
   }
 }

@@ -12,18 +12,24 @@ function Info() {
         </div>
         <div className="card-position">
           <div className="card">
-            <img src="img/animales300101.jpg" alt="Persona 1" />
+            <img
+              src="https://cdn.picrew.me/shareImg/org/202411/644129_kntzcOVS.png"
+              alt="Persona 1"
+            />
             <h3>Ignacio</h3>
           </div>
           <div className="card">
             <img
-              src="img/9043c4c90d43d9a5c27214ca5dbdbb5b.jpg"
+              src="https://cdn.picrew.me/shareImg/org/202411/644129_FVzkQoRl.png"
               alt="Persona 2"
             />
             <h3>Nicolas</h3>
           </div>
           <div className="card">
-            <img src="img/image-51.webp" alt="Persona 3" />
+            <img
+              src="https://cdn.picrew.me/shareImg/org/202411/644129_WQnUqBc8.png"
+              alt="Persona 3"
+            />
             <h3>Yuliana</h3>
           </div>
         </div>
